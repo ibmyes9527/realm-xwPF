@@ -88,7 +88,7 @@ wget -qO- https://raw.githubusercontent.com/zywe03/realm-xwPF/main/xwPF.sh | sud
 ### 网络受限使用加速源,一键安装
 
 ```bash
-wget -qO- https://gh.henhei.win/https://raw.githubusercontent.com/zywe03/realm-xwPF/main/xwPF.sh | sudo bash -s install
+wget -qO- https://gh.henhei.win/https://raw.githubusercontent.com/ibmyes9527/realm-xwPF/main/xwPF.sh | sudo bash -s install
 ```
 若加速源失效，可多次重试或更换其他具有内置加速功能的代理源
 
