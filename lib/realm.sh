@@ -86,7 +86,7 @@ download_from_sources() {
 get_latest_realm_version() {
     echo -e "${YELLOW}获取最新版本信息...${NC}" >&2
 
-    local latest_version=$(curl -sL --connect-timeout $SHORT_CONNECT_TIMEOUT --max-time $SHORT_MAX_TIMEOUT "https://github.com/zhboner/realm/releases" 2>/dev/null | \
+    local latest_version=$(curl -sL --connect-timeout $SHORT_CONNECT_TIMEOUT --max-time $SHORT_MAX_TIMEOUT "https://gh.henhei.win/https://github.com/zhboner/realm/releases" 2>/dev/null | \
         head -2100 | \
         sed -n 's|.*releases/tag/v\([0-9.]*\).*|v\1|p' | head -1)
 
@@ -251,7 +251,7 @@ install_realm() {
                 ;;
         esac
 
-        DOWNLOAD_URL="https://github.com/zhboner/realm/releases/download/${LATEST_VERSION}/realm-${ARCH}.tar.gz"
+        DOWNLOAD_URL="https://gh.henhei.win/https://github.com/zhboner/realm/releases/download/${LATEST_VERSION}/realm-${ARCH}.tar.gz"
         echo -e "${BLUE}目标文件: realm-${ARCH}.tar.gz${NC}"
 
         local file_path="$(pwd)/realm.tar.gz"
